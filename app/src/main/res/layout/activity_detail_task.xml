@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/gradient"
+    tools:context=".DetailTask">
+    <ImageButton
+        android:id="@+id/btn_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/back"
+        android:layout_alignParentStart="true"
+        android:paddingTop="19sp"
+        android:paddingBottom="17sp"
+        android:paddingLeft="15sp"
+        android:paddingRight="15sp"
+        android:background="@color/maincolor"/>
+    <TextView
+        android:id="@+id/tv_BackPageTitle"
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:text="Tugas"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center_vertical"
+        android:paddingLeft="20sp"
+        android:paddingTop="10sp"
+        android:paddingBottom="10sp"
+        android:layout_toEndOf="@id/btn_back"
+        android:background="@color/maincolor"/>
+    <TextView
+        android:id="@+id/tv_Tugastitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_BackPageTitle"
+        android:layout_marginBottom="25dp"
+        android:background="@android:color/transparent"
+        android:text="Tugas Pertemuan 1"
+        android:textColorHint="@color/black"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"/>
+    <TextView
+        android:id="@+id/tv_dl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginBottom="5dp"
+        android:layout_below="@id/tv_Tugastitle"
+        android:text="Tenggat Waktu"
+        android:textStyle="bold"
+        android:textSize="23sp"/>
+    <RelativeLayout
+        android:id = "@+id/layoutdates"
+        android:layout_height="wrap_content"
+        android:layout_width="188sp"
+        android:layout_below="@id/tv_dl"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:background="@drawable/task_tv">
+        <TextView
+            android:id ="@+id/tv_dates"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date"
+            android:layout_marginBottom="5dp"
+            android:textColor="@color/grey"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/tv_dates"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:text="19 October 2023"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id ="@+id/layouttimes"
+        android:layout_width="188sp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_dl"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="17sp"
+        android:layout_alignParentRight="true"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:background="@drawable/task_tv"
+        android:text="Time
+        \n 07:00 a.m"
+        android:layout_marginBottom="5dp">
+        <TextView
+            android:id ="@+id/tv_times"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Time"
+            android:layout_marginBottom="5dp"
+            android:textColor="@color/grey"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/tv_times"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:text="7:00 A.M"/>
+    </RelativeLayout>
+    <CheckBox
+        android:id="@+id/cb_Status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layouttimes"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="20dp"
+        android:text="Status"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:background="@drawable/checkbox"/>
+    <TextView
+        android:id="@+id/tv_Desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_below="@id/cb_Status"
+        android:text="Deskripsi"
+        android:textStyle="bold"
+        android:textSize="23sp"/>
+    <TextView
+        android:layout_marginTop="5dp"
+        android:id="@+id/edt_NoteBody"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_Desc"
+        android:gravity="center"
+        android:background="@drawable/edt"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:minHeight="100sp"
+        android:text="Cari makalah tentang IP Address"
+        android:paddingLeft="15sp"/>
+
+</RelativeLayout>

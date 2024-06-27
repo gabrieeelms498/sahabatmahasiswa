@@ -1,0 +1,55 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="15dp"
+    android:paddingTop="15dp"
+    android:paddingRight="10dp"
+    android:background="@drawable/task_tv"
+    android:layout_marginBottom="16dp"
+    android:id="@+id/relative_layout1">
+
+    <TextView
+        android:id="@+id/tv_Tugas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sistem Multimedia (3 SKS)"
+        android:layout_marginBottom="5dp"
+        android:textSize="18sp"
+        android:layout_marginLeft="50dp"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/tv_dl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/tv_Tugas"
+        android:textSize="16dp"
+        android:layout_marginLeft="50dp"
+        android:text="FIKLAB 304 - Senin 15:00 - 18.00" />
+    <TextView
+        android:id="@+id/tv_Desc"
+        android:layout_marginTop="3dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="50dp"
+        android:layout_below="@id/tv_dl"
+
+        android:text="Drs. Ir. Jumirok Al Mahmud S.Kom, M.Kom" />
+
+    <ImageButton
+        android:id="@+id/btn_Delete1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/delete"
+        android:background="@android:color/transparent"
+        android:layout_alignParentRight="true" />
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:id="@+id/cb"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        />
+
+</RelativeLayout>

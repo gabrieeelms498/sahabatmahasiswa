@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "24242144492",
+    "project_id": "sahabatmahasiswa-e6b24",
+    "storage_bucket": "sahabatmahasiswa-e6b24.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:24242144492:android:3232779d1bef096ee911c9",
+        "android_client_info": {
+          "package_name": "com.example.sahabatmahasiswa"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBjG3_XPNDc9jr1Q_DjPXvuN1IQ4ZXJz3M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

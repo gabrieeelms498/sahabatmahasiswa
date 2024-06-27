@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="maincolor">#76D2E9</color>
+    <color name="edt">#D9D9D9</color>
+    <color name="hint">#919191</color>
+    <color name="button">#76D2E9</color>
+    <color name="save">#99D19C</color>
+    <color name="grey">#808080</color>
+    <color name="navbar">#F3F3F3</color>
+    <color name="select">#5996F1</color>
+    <color name="finished">#C1E1BF</color>
+    <color name="notfinished">#EEE8AA</color>
+    <color name="profile_tv">#C2D9FF</color>
+    <color name="red">#FF0000</color>
+</resources>

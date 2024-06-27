@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/gradient"
+    tools:context=".AddFiles">
+
+    <ImageButton
+        android:id="@+id/btn_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/back"
+        android:layout_alignParentStart="true"
+        android:paddingTop="19sp"
+        android:paddingBottom="17sp"
+        android:paddingLeft="15sp"
+        android:paddingRight="15sp"
+        android:background="@color/maincolor"/>
+    <TextView
+        android:id="@+id/tv_BackPageTitle"
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:text="Dokumen"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center_vertical"
+        android:paddingLeft="20sp"
+        android:paddingTop="10sp"
+        android:paddingBottom="10sp"
+        android:layout_toEndOf="@id/btn_back"
+        android:background="@color/maincolor"/>
+    <TextView
+        android:id="@+id/tv_DetailPageTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_BackPageTitle"
+        android:background="@android:color/transparent"
+        android:text="Unggah Dokumen"
+        android:textColorHint="@color/black"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_AddFiles"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_below="@id/tv_DetailPageTitle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="-1dp"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:background="@color/edt"
+        android:paddingLeft="20dp"
+        android:paddingTop="20dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="20dp">
+        <TextView
+            android:id="@+id/file_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btn_upload"
+            android:text=""
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cancel"
+            android:layout_below="@id/file_name"
+            android:layout_centerHorizontal="true"
+            android:visibility="gone" />
+        <ImageButton
+            android:id="@+id/btn_upload"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@android:color/transparent"
+            android:src="@drawable/upload" />
+
+        <TextView
+            android:id="@+id/tv_upload1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btn_upload"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:layout_marginTop="10dp"
+            android:text="Unggah Dokumen"
+            android:textColor="@color/hint"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_upload2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_upload1"
+            android:layout_centerInParent="true"
+            android:text="File yang diterima hanya file dalam format doc,\ndocx, ppt, pdf, csv, dan xlsx\nRange size file yang dapat diunggah\nadalah 2 MB"
+            android:textAlignment="center"
+            android:textColor="@color/hint" />
+    </RelativeLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_Simpan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_AddFiles"
+        android:layout_marginLeft="100sp"
+        android:layout_marginRight="100sp"
+        android:text="Simpan"
+        android:textSize="17dp"
+        android:textColor="@color/black"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        android:background="@drawable/simpan"/>
+
+</RelativeLayout>

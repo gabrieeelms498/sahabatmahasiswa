@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/gradient"
+    tools:context=".Matkul">
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageButton
+                android:id="@+id/btn_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/back"
+                android:layout_alignParentStart="true"
+                android:paddingTop="19sp"
+                android:paddingBottom="17sp"
+                android:paddingLeft="15sp"
+                android:paddingRight="15sp"
+                android:background="@color/maincolor"/>
+            <TextView
+                android:id="@+id/tv_BackPageTitle"
+                android:layout_width="match_parent"
+                android:layout_height="50sp"
+                android:text="Beranda"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:gravity="center_vertical"
+                android:paddingLeft="20sp"
+                android:paddingTop="10sp"
+                android:paddingBottom="10sp"
+                android:layout_toEndOf="@id/btn_back"
+                android:background="@color/maincolor"/>
+            <TextView
+                android:id="@+id/tv_PageTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_BackPageTitle"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:text="Daftar Mata Kuliah"
+                android:textStyle="bold"
+                android:textSize="30dp"
+                android:gravity="center"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_PageTitle"
+                android:layout_marginLeft="16dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginRight="16dp" />
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_AddMatkul"
+                android:layout_width="wrap_content"
+                android:layout_height="40sp"
+                android:layout_below="@id/recyclerView"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:text="+   Tambah Mata Kuliah"
+                android:textAllCaps="false"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                android:background="@drawable/simpan"
+                android:paddingTop="5sp"
+                android:paddingBottom="5sp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="16dp"
+                android:paddingLeft="15sp"
+                android:paddingRight="20sp"/>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

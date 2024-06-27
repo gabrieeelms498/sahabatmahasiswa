@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/senin" android:title="Senin"/>
+    <item android:id="@+id/selasa" android:title="Selasa"/>
+    <item android:id="@+id/rabu" android:title="Rabu"/>
+    <item android:id="@+id/kamis" android:title="Kamis"/>
+    <item android:id="@+id/jumat" android:title="Jumat"/>
+    <item android:id="@+id/sabtu" android:title="Sabtu"/>
+    <item android:id="@+id/minggu" android:title="Minggu"/>
+</menu>
